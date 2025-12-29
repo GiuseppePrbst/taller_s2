@@ -1,0 +1,45 @@
+:root {
+    --primary: #7d5fff;
+    --secondary: #32ff7e;
+}
+
+/* Base App Overrides */
+.stApp {
+    background-attachment: fixed;
+}
+
+/* Glassmorphic Container - Adaptive */
+.glass-card {
+    background: rgba(125, 95, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(125, 95, 255, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Headlines with Gradients */
+h1,
+h2,
+h3 {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(45deg, #7d5fff, #32ff7e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Ensure Metrics look premium */
+[data-testid="stMetricValue"] {
+    font-size: 2.2rem !important;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Sidebar transparency */
+section[data-testid="stSidebar"] {
+    border-right: 1px solid rgba(125, 95, 255, 0.1);
+}
